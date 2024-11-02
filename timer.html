@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer with Video</title>
+    <style>
+        /* Responsive video container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1>Timer</h1>
     <div>
-        <!-- Embed the YouTube video -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/M0iNj0aBsTY?si=dcSb5ZAEM3aTMosi&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <!-- Your timer code can go here -->
-</body>
-</html>
+        <div class="video-container">
+            <!-- Embed the YouTub
