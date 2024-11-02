@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Webpage</title>
+    <title>Timer with Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Support My Work</h1>
-    <p>If you enjoy my content, consider buying me a coffee!</p>
-    
-    <!-- Buy Me a Coffee Widget -->
-    <a href="https://www.buymeacoffee.com/sarahk.links" target="_blank">
-        <img src="https://cdn.buymeacoffee.com/buttons/v2/arial/white.png" alt="Buy Me a Coffee" />
-    </a>
-</body>
-</html>
+    <h1>Timer</h1>
+    <div class="video-container">
+        <iframe width="560" height="315" 
+            src="https://www.youtube-nocookie.com/embed/M0iNj0aBsTY?controls=0" 
+            title="YouTube video player" 
